@@ -1,0 +1,487 @@
+{% load static %}
+{% load bootstrap %}
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+     <meta charset="UTF-8">
+    <meta name="description" content="Wyden Tech Jr">
+    <meta name="keywords" content="WEB, MOBILE, TREINAMENTO">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyden Tech Jr - Empresa de Desenvolvimento de Software</title>
+
+  <title>Wyden Tech Jr</title>
+
+ <link rel="stylesheet"  href="{% static 'css/style.css'%}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+
+
+
+</head>
+<body>
+
+    <!--MENU-->
+   <header>
+
+  <div id='nav-wrapper'>
+        <nav>
+            <img src="{% static 'img/wt.png' %}" alt="Wyden Tech Jr" width="60" height="60">
+
+            <li><a href="#categories">SERVIÇOS</a></li>
+            <li><a href="#sobrenos">SOBRE NÓS</a></li>
+            <li><a href="#availability">PARCEIROS</a></li>
+            <li><a href="#developers-pg">TIME</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+            <li><a onclick="location.href='login'" >LOGIN</a></li>
+        </nav>
+    </div>
+  </header>
+    <!--WYDEN TECH JR-->
+    <div id='banner'>
+        <div id='banner-vid'>
+            <video autoplay loop id="video-background" poster="{% static 'img/poster2.png' %}" width="1700" height="750" muted>
+            </video>
+        </div>
+        <h1>WYDEN TECH JR</h1>
+        <h2>Desenvolvimento de Software.</h2>
+        <p></p><p></p><p></p> <p></p>
+
+        <!--SERVIÇOS-->
+    </div>
+    <div id='body'>
+        <section id='categories' href="#slideshow">
+                <div class='t-box hover-t-box' onmouseover='setDivs(1)'>
+                  <i class="symbol fas fa-globe"></i>
+                  <h1>Web</h1>
+                  <h2>Desenvolvimento de  Sites e Sitemas Web </h2>
+                </div>
+                <div class='t-box' onmouseover='setDivs(2)'>
+                    <i class="symbol fas fa-mobile-alt"></i>
+                    <h1>Mobile</h1>
+                    <h2>Aplicativos Móveis</h2>
+                  </div>
+                  <div class='t-box' onmouseover='setDivs(3)'>
+                    <i class="symbol far fa-user"></i>
+
+                    <h1>Treinamento</h1>
+                    <h2>Capacitação de Pessoas</h2>
+                  </div>
+
+        </section>
+        <section id='slideshow'>
+            <article class='slide'>
+                <h2>Softwares dinâmicos, onde a experiência do usuário é personalizada</h2>
+                <ul>
+                    <li>Soluções que podem ser desenvolvidas para tornar processos manuais mais simples</li>
+                    <li>Cadastro de clientes, gestão de documentos ou de estoque, por exemplo</li>
+                    <li>Integração e comunicação  permitindo que públicos tenham acessos a informações</li>
+                </ul>
+            </article>
+            <article class='slide'>
+                <h2>Aplicativos desenvolvidos para ser instalado em um dispositivo eletrônico móvel</h2>
+                <ul>
+                    <li>Melhor experiência para o usuário, possibilitando uma melhor utilização de recursos gráficos.</li>
+                    <li>Aplicações que proporcionam um uso mais rápido e agradável para o usuário.</li>
+                    <li>Programas de compra e venda de produtos que facilitam compras online e pagamentos.</li>
+                </ul>
+
+            </article>
+            <article class='slide'>
+                <h2>Desenvolvimento e capacitação de pessoas</h2>
+                <text>
+                    Treinamento de alunos que desejam adquirir conhecimento e experiência em desenvolvimento de programas computacionais.
+                </text>
+            </article>
+        </section>
+
+        <!--SOBRE NÓS-->
+        <div id='sobrenos'>
+                <section id='categories' href="#slideshow">
+              <section class="container-fluid" style='border: 0;'><h2>SOBRE NÓS</h2></section>
+
+
+                    <div class='t-box hover-t-box'  class='t-box'>
+                        <img src="{% static 'img/wtj.png' %}" width="260">
+                        <article>
+                                <p>
+                                    A Wyden Tech Jr é uma empresa sem fins lucrativos fundada em 2019, com objetivo de proporcionar ambiente de aprendizado, empreendedorismo e colaborativismo para estudantes de Tecnologia da Informação (TI).
+                                </p>
+                                <p>
+                                    Proporcionando um ambiente empresarial, a Wyden Tech Júnior, vinculada ao CEI (Centro de Empreendedorismo e Inovaçao) dentro da Instituiçao Facid Wyden, visa prestar serviço de qualidade como empresa junior pode oferecer. Seu crescimento além de impactar diretamente no crescimento e evolução de seus membros, gera valor ao projeto de seus clientes e estimula o cenario de empreendedorismo brasileiro.
+                                </p>
+                        </article>
+                    </div>
+            </section>
+        </div>
+        <!--PARCEIROS-->
+
+                  <section class="container-fluid" style='border: 0;'><h2>PARCEIROS</h2></section>
+                  <div id='availability'>
+
+                      <div class='time-part'><img src="{% static 'img/adtalen.png' %}" width="355"></div>
+                      <div class='time-part'><img src="{% static 'img/cei.png' %}" width="355"></div>
+                      <div class='time-part'><img src="{% static 'img/facid.png' %}" width="355"></div>
+                  </div>
+
+
+        <!--TIME-->
+
+        <div id='developers-pg'>
+                <section class="container-fluid" style='border: 0;'>
+                    <h2>TIME</h2>
+                </section>
+            <section id='developers' href="#categories">
+                <div class='t-box hover-t-box'>
+                    <img src="{% static 'img/01.png' %}" height="100" width="100">
+                    <h1>Artur de Sousa</h1>
+                    <h2>Desenvolvedor Front-End</h2>
+                    <span><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class='t-box'>
+                    <img src="{% static 'img/05.png' %}" height="100" width="100">
+                    <h1>Luana Almeida</h1>
+                    <h2>Desenvolvedora Front-End</h2>
+                    <span><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class='t-box'>
+                    <img src="{% static 'img/03.png' %}" height="100" width="100">
+                    <h1>Rosana Oliveira</h1>
+                    <h2>Desenvolvedora Front-End</h2>
+                    <span><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class='t-box'>
+                    <img src="{% static 'img/06.png' %}" height="100" width="100">
+                    <h1>Ataniel Ramos</h1>
+                    <h2>Desenvolvedor Back-End</h2>
+                    <span><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class='t-box'>
+                    <img src="{% static 'img/04.png' %}" height="100" width="100">
+                    <h1>Nayanna Nara</h1>
+                    <h2>Desenvolvedora Back-End</h2>
+                    <span><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></span>
+                </div>
+            </section>
+
+        </div>
+
+
+        <section id='contato'>
+    <main>
+
+
+      <h2>CONTATO</h2>
+
+    <div class="topic">
+        <div class="open">
+         <h2 class="question">Entre em contato<span class="ptag"></span></h2>
+         <span class="faq-t"></span>
+    </div>
+
+<form  class="answer" action="{% url 'core_contato_novo' %}" method="POST" onSubmit="return confirm('Enviado com sucesso')">
+    {% csrf_token %}
+    <fieldset>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo" maxlength="40" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">E-mail</label>
+          <input type="text" class="form-control" name="email" id="email" placeholder="E-mail" maxlength="40" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="telefone">Telefone</label>
+          <input type="text" class="telefone form-control" name="telefone" id="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+        </div>
+        <div class="form-group col-md-6">
+        <label for="mensagem">Mensagem</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="Deixe aqui sua mensagem" required></textarea>
+      </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="reset" class="btn btn-danger">Apagar</button>
+
+  </fieldset >
+</form>
+
+    </div>
+
+
+      <div class="topic">
+            <div class="open">
+              <h2 class="question">Envie seu Currículo<span class="ptag"></span></h2>
+              <span class="faq-t"></span>
+            </div>
+     <form class="answer" action="{% url 'core_candidato_novo' %}" enctype="multipart/form-data" method="POST" onSubmit="return confirm('Enviado com sucesso')">
+    {% csrf_token %}
+          <fieldset id="cadastro">
+    <legend>Dados Pessoais</legend>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" name="nome" placeholder="Nome Completo" maxlength="50" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" name="email" placeholder="E-mail" maxlength="50" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="nacionalidade">Nacionalidade</label>
+          <select class="form-control" id="nacionalidade" name="nacionalidade" required>
+              <option value="">Selecione aqui</option>
+              <option value="Brasileiro">Brasileiro</option>
+              <option value="Estrangeiro">Estrangeiro</option>
+        </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="cpf">CPF</label>
+          <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" onkeypress="validaCPF()" maxlength="11" required>
+        </div>
+          <div class="form-group col-md-3">
+          <label for="telefone">Celular</label>
+          <input type="text" class="telefone form-control" name="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="data_nascimento">Data de nascimento</label>
+          <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="dd/mm/yyyy" required>
+        </div>
+      </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="genero">Gênero</label>
+          <select class="form-control" id="genero" name="genero" required>
+              <option value="">Selecione aqui</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Outros">Outros</option>
+        </select>
+        </div>
+       <div class="form-group col-md-6">
+          <label for="estado_civil">Estado Civil</label>
+          <select class="form-control" id="estado_civil" name="estado_civil" required>
+              <option value="">Selecione aqui</option>
+              <option value="Casado(a)">Casado(a)</option>
+              <option value="Solteiro(a)">Solteiro(a)</option>
+              <option value="Viúvo(a)">Viúvo(a)</option>
+              <option value="Divorciado">Divorciado</option>
+              <option value="União estável">União estável</option>
+        </select>
+        </div>
+    </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="deficiencia">Possui alguma deficiência?</label>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="deficiencia" value="Sim">
+            <label class="form-check-label" for="deficiencia">Sim</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="deficiencia" id="deficiencia" value="Não" checked>
+            <label class="form-check-label" for="deficiencia">Não</label>
+        </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="tipo_deficiencia">Qual o tipo de deficiência?</label>
+          <select class="form-control" id="tipo_deficiencia" name="tipo_deficiencia">
+              <option value="">Selecione aqui</option>
+              <option value="Auditiva">Auditiva</option>
+              <option value="Visual">Visual</option>
+              <option value="Fala">Fala</option>
+              <option value="Física">Física</option>
+              <option value="Outros">Outros</option>
+        </select>
+        </div>
+      </div>
+    </fieldset>
+      <fieldset>
+      <legend>Endereço</legend>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-control" name="cep "id="cep" maxlength="10" onkeypress="mascara(this, '#####-###')" placeholder="00000-000" autofocus required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="Logradouro" maxlength="40" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="numero">Número</label>
+          <input type="number" class="form-control" name="numero "id="numero" placeholder="Número" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="complemento">Complemento</label>
+          <input type="text" class="form-control" name="complemento" id="complemento" placeholder="Complemento" maxlength="60" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-control" name="bairro" id="bairro" readonly placeholder="Bairro" maxlength="25" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="estado" >Estado</label>
+          <input type="text" class="form-control" name="estado "id="estado" readonly placeholder="Estado" maxlength="3" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cidade">Cidade</label>
+          <input type="text" class="form-control" name="cidade" id="cidade" readonly placeholder="Cidade" maxlength="30" required>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+        <legend>Dados Acadêmicos</legend>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="matricula">Matrícula</label>
+          <input type="text" class="form-control" name="matricula "id="matricula" placeholder="Matrícula" maxlength="20" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="curso">Curso</label>
+          <select class="form-control" id="curso" name="curso" required>
+              <option value="">Selecione aqui</option>
+              <option value="Administração">Administração</option>
+              <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+              <option value="Arquitetura e Urbanismo<">Arquitetura e Urbanismo</option>
+              <option value="Biomedicina">Biomedicina</option>
+              <option value="Ciências Contábeis">Ciências Contábeis</option>
+              <option value="Design de Interiores">Design de Interiores</option>
+              <option value="Design de Moda">Design de Moda</option>
+              <option value="Design de Produto">Design de Produto</option>
+              <option value="Design Gráfico<">Design Gráfico</option>
+              <option value="Direito">Direito</option>
+              <option value="Educação Física">Educação Física</option>
+              <option value="Enfermagem">Enfermagem</option>
+              <option value="Engenharia Ambiental e Sanitária">Engenharia Ambiental e Sanitária</option>
+              <option value="Engenharia Civil">Engenharia Civil</option>
+              <option value="Engenharia de Alimentos">Engenharia de Alimentos</option>
+              <option value="Engenharia de Controle e Automação">Engenharia de Controle e Automação</option>
+              <option value="Engenharia de Produção">Engenharia de Produção</option>
+              <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+              <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+              <option value="Farmácia">Farmácia</option>
+              <option value="Fisioterapia">Fisioterapia</option>
+              <option value="Gastronomia">Gastronomia</option>
+              <option value="Gestão de TI<">Gestão de TI</option>
+              <option value="Gestão Financeira">Gestão Financeira</option>
+              <option value="Logística">Logística</option>
+              <option value="Manutenção Industrial">Manutenção Industrial</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Medicina">Medicina</option>
+              <option value="Nutrição">Nutrição</option>
+              <option value="Odontologia">Odontologia</option>
+              <option value="Processos Gerenciais">Processos Gerenciais</option>
+              <option value="Psicologia">Psicologia</option>
+              <option value="Radiologia">Radiologia</option>
+              <option value="Sistemas de Informação">Sistemas de Informação</option>
+              <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+        </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="periodo">Periodo</label>
+          <select class="form-control" id="periodo" name="periodo" required>
+              <option value="">Selecione aqui</option>
+              <option value="1">1º</option>
+              <option value="2">2º</option>
+              <option value="3">3º</option>
+              <option value="4">4º</option>
+              <option value="5">5º</option>
+              <option value="6">6º</option>
+              <option value="7">7º</option>
+              <option value="8">8º</option>
+              <option value="9">9º</option>
+              <option value="10">10º</option>
+              <option value="11">11º</option>
+              <option value="12">12º</option>
+        </select>
+        </div>
+      </div>
+        <div class="form-row">
+             <div class="form-group col-md-4">
+                <label for="arquivo">Arquivo</label>
+                <input type="file" class="form-control-file" id="arquivo" name="arquivo" required>
+              </div>
+        </div>
+         <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="reset" class="btn btn-danger">Apagar</button>
+  </fieldset>
+</form>
+      </div>
+
+
+      <div class="topic">
+            <div class="open">
+              <h2 class="question"> FAQ
+              </h2><span class="faq-t"></span>
+            </div>
+<div class="answer">
+    <h2>Como funciona o CEI</h2>
+<p>
+Por meio de empresas juniores (EJs), constituídas e administradas por alunos e professores, as
+instituições Adtalem Educacional do Brasil captam e desenvolvem projetos de extensão.
+São células empreendedoras atuantes em diversas áreas de estudo da Graduação, as quais têm a
+capacidade de potencializar o networking, além de auxiliarem os estudantes na aquisição de
+habilidades e de competências em suas respectivas áreas de atuação. No CEI, o aluno é o
+protagonista.
+</p>
+
+     <h2>Quais os pré-requisitos para participar</h2>
+<p>
+Ter disponibilidade de 10(dez) horas semanais. Estar regularmente matriculado em um dos cursos
+da faculdade Integral Diferencial, no semestre 2019.1, período de vigência do contrato.
+</p>
+
+
+    <h2>Como funciona o processo de seleção</h2>
+<p>
+Ocorrerá em três etapas: Preenchimento do formulário de inscrição online: verificação do correto
+preenchimento do formulário e da veracidade das Prova escrita/redação.
+Dinâmica em grupo e entrevista individual
+</p>
+
+    <h2>Quais os benefícios de participação</h2>
+<p>
+A participação das atividades do CEI assegura ao aluno 30 (trinta) pontos computados como
+atividades PEX - Programa de Experiências e o recebimento do Certificado, com a carga horária
+real (10 horas por semana), desde que tenha até o final do período de participação no programa
+descrito.
+</p>
+</div>
+      </div>
+
+
+
+
+    </main>
+  </section>
+        <!--CONTATOS-->
+        <section id='foot'>
+            <a text-align="center" class='play-button-opt' href='#'><i class="symbol fas fa-map-marker-alt"></i>&nbsp; Rua Veterinário Bugyja Brito, 1354 <br>Horto Florestal - Teresina, Piauí</a>
+            Desenvolvido por Wyden Tech Jr © 2019
+            <div id='social-links'>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </section>
+    </div>
+
+ <script  src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
