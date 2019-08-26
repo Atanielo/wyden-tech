@@ -13,7 +13,7 @@ SECRET_KEY = '+op%xug@_ljhk)5n_z#r^%k6i!ekss53a!*+#=j70^qon3ue$c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.0.30.238', '177.107.16.254', 'wydenjr.ddns.net']
+ALLOWED_HOSTS = ['localhost', '10.0.30.238', '177.107.16.254', 'wydenjr.ddns.net']
 
 
 # Application definition

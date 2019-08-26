@@ -1,0 +1,150 @@
+1º Parte
+Menu Configuration => VoIP => SIP Definitions => Proxy Registration
+=> Use Default Proxy = Yes
+=> Proxy Set Tables (clique na setinha, e coloque o IP do seu Asterisk
+no campo 1 e marque UDP no Transport Type (Submit)
+Volte para o menu = Proxy Registration
+OBS. Antes de continuar procure na quanto superior direto desse menu a
+opção que alterna as configuração Basica para Avançada, faça isso nas
+telas os próximos passos também.
+Com a tela nas configurações avançadas...
+=> Proxy Name = IP do seu Asterisk
+=> Enable Registration = Enable
+=> Registrar Name = IP do seu Asterisk
+=> Registrar IP Address = IP do seu Asterisk
+=> Registrar Transport Type = UDP
+=> Subscription Mode = Per Endpoint
+=> Registration Mode = FXS (Aqui que você diz ao Gateway que ser se
+autenticar por porta.)
+Clique em Submit.
+
+2º Parte
+Menu Configuration => VoIP => GW and IP to IP => Analog Gateway =>
+Authentication
+Nessa tela você irá configurar as contas SIP em cada porta que deseja
+ativar, colocando o usuário e senha.
+Quando finalizar as configurações, clique em Submit.
+
+3ª Parte
+Menu Configuration => VoIP => GW and IP to IP => Hunt Group =>
+EndPoint Phone Number
+Nessa tela você irá configurar somente a porta e conta SIP (user) que
+foi configurada na 2ª parte.
+Ex. Na 2º parte você configurou as contas abaixo:
+Porta 1: User: 1234 Senha: 4321
+Porta 2: User: 7890 Senha: 0987
+
+Então na 3ª parte você coloca só a porta e user:
+Ex. Channel 1 = 1 | Phone Number = 1234
+Channel 2 = 2 | Phone Number = 7890
+
+Clica em Submit e depois Register. Creio que agora as requisições irão
+chegar ao PABX.
+Continuando...
+
+4ª Parte
+Menu Configuration => VoIP => GW and IP to IP => DTMF and
+Supplementary => DTMF & Dialing
+Nessa tela você fará ajustes de discagem e eventos DTMF
+=> Max Digits In Phone Num = 21 (Aqui você define qual a quantidade
+máxima de dígitos que vão sair pelas portas do gateway, o default é 3)
+=>  Inter Digit Timeout [sec] = 2 (Eu uso 2, você define o que achar melhor)
+=> 1st Tx DTMF Option = RFC 2833 (Tipo de método que será enviado os DTMF)
+=> Hook-Flash Option = RFC 2833 (Essa opção é útil se você quiser que
+seus usuários façam transferência usando a tecla flash do aparelho)
+Clique em Submit após as alterações.
+
+5ª Parte
+Menu Configuration => VoIP => Coders And Profiles =>Coders
+Nessa tela você configura a ordem dos codecs, defina a ordem que lhe
+for conveniente. Só NÃO ESQUEÇA, de desativar o "Silence Suppression".
+Clique em Submit.
+
+Após o Reset do Gateway
+6ª
+Menu Status & Diagnostics => Voip Status => Registration Status
+Nessa tela você consegue ver as portas que estão autenticadas.
+
+Bom é isso cara! Espero ter ajudado!
+
+[]'s
+Beraldo
+
+
+
+
+
+
+
+Em 25 de outubro de 2011 15:38, Guilherme Rezende
+<asterisk em guilherme.eti.br> escreveu:
+> Pessoal, alguém pode me dar uma luz de como configurar o AudioCodes MP 124?
+> Não estou conseguindo logar as 24 portas FXS em meu Asterisk...  O
+> audiocodes sequer manda algum pacote SIP p/ o Asterisk......
+> Ahh, fiz upgrade de fiware p/ a versão 6.0 e tbm não mudou muito......
+> Abs.. e fico grato por qualquer ajuda..
+>
+>> Pessoal, essa semana chegou p/ mim configurar um Audiocodes MP124.  Bom,
+>> dei uma olhada de início e percebi que é diferente a parte de registro
+>> do mesmo p/ se logar no Asterisk.  Versão de Firware 5.4.
+>>
+>> Fui em Protocol Definition, Proxy and Registration, coloquei o ip do
+>> Asterisk e como método de autenticação o peerEndpoints.  Dentro de
+>> PeerEndPoints fiz a configuração de login e senha em cada porta, porém o
+>> gateway nem requisição manda p/ o Asterisk.  Ja olhei no manual e não vi
+>> muita coisa de diferente no que fazer.  Alguém poderia me dar uma luz?
+>> Outra coisa seria de configuração que irei precisar é:
+>>       1 - Diferenciação de toque, ou seja toque diferente de ramal p/
+>> ramal e quando a ligação é externa.  Nos Linksys SPA8000 eu apenas faço
+>> a seguinte:
+>>               exten =>  _2XX,1,SIPAddHeader(alert-info:bellcore-r3)
+>>               exten =>  _2XX,2,NoCDR()
+>>               exten =>  _2XX,3,Dial(SIP/${EXTEN}|40|tTrwW)
+>>               exten =>  _2XX,4,Hangup
+>>
+>>       2  - Dial Plain.  Eu preciso configurar o DialPlan, p/ quando o
+>> usuário discar o número do ramal, a ligação chamar imediatamente. Exemplo:
+>>
+>> |2xx||0xxxxxxxx||0031xxxxxxxxxx||*8||55||00800xxxxxxxxxxx||00300xxxxxxxx||010xxxx||*56xxx||*57||7xx|
+>>
+>>
+>> Alguém poderia me dar uma luz?
+>>
+>> Abs a todos da lista..
+>> _______________________________________________
+>> KHOMP: qualidade em placas de E1, GSM, FXS e FXO para Asterisk.
+>> - Hardware com alta disponibilidade de recursos e qualidade KHOMP
+>> - Suporte técnico local qualificado e gratuito
+>> Conheça a linha completa de produtos KHOMP em www.khomp.com.br
+>> _______________________________________________
+>> DIGIVOICE: Lider no mercado de placas para Asterisk
+>> Único fabricante com Centro de Treinamento especializado.
+>> LANÇAMENTO: Channel Bank TDMoE, até 64 canais FXS / FXO.
+>> www.digivoice.com.br ou (11)3016-5200.
+>> ________
+>> GATEWAY GSM-SIP, gateway Lyric VoIP com 2,4 e 6 canais GSM vía tronco SIP
+>> Escalável até 240 canáis, Portabilidade Numérica,  Balanceamento de Carga, Bilhetagem
+>> Confira em http://www.yx.cl/landing/brasil/lyric_voip_asterisk.org
+>> Shop Voip, representante exclusivo: www.shopvoip.com.br ou 0800-6021244
+>> ______________________________________________
+>> Para remover seu email desta lista, basta enviar um email em branco para asteriskbrasil-unsubscribe em listas.asteriskbrasil.org
+>>
+>
+> _______________________________________________
+> KHOMP: qualidade em placas de E1, GSM, FXS e FXO para Asterisk.
+> - Hardware com alta disponibilidade de recursos e qualidade KHOMP
+> - Suporte técnico local qualificado e gratuito
+> Conheça a linha completa de produtos KHOMP em www.khomp.com.br
+> _______________________________________________
+> DIGIVOICE: Lider no mercado de placas para Asterisk
+> Único fabricante com Centro de Treinamento especializado.
+> LANÇAMENTO: Channel Bank TDMoE, até 64 canais FXS / FXO.
+> www.digivoice.com.br ou (11)3016-5200.
+> ________
+> GATEWAY GSM-SIP, gateway Lyric VoIP com 2,4 e 6 canais GSM vía tronco SIP
+> Escalável até 240 canáis, Portabilidade Numérica,  Balanceamento de Carga, Bilhetagem
+> Confira em http://www.yx.cl/landing/brasil/lyric_voip_asterisk.org
+> Shop Voip, representante exclusivo: www.shopvoip.com.br ou 0800-6021244
+> ______________________________________________
+> Para remover seu email desta lista, basta enviar um email em branco para asteriskbrasil-unsubscribe em listas.asteriskbrasil.org
+>
