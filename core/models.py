@@ -32,7 +32,7 @@ class Candidato(models.Model):
     matricula = models.CharField(max_length=20, null=True, blank=False)
     curso = models.CharField(max_length=30, null=True, blank=False, verbose_name='curso')
     periodo = models.CharField(max_length=2, null=True, blank=True, verbose_name='periodo')
-#    arquivo = models.FileField(null=True, upload_to='arquivos')
+
 
     def __str__(self):
         return self.nome
