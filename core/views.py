@@ -30,7 +30,7 @@ def candidato_novo(request):
             candidato['nacionalidade'] = request.POST.get('nacionalidade')
             candidato['cpf'] = request.POST.get('cpf')
             candidato['telefone'] = request.POST.get('telefone')
-            candidato['data_nascimento'] = request.POST.get('data_nascimento')
+#            candidato['data_nascimento'] = request.POST.get('data_nascimento')
             candidato['genero'] = request.POST.get('genero')
             candidato['estado_civil'] = request.POST.get('estado_civil')
             candidato['deficiencia'] = request.POST.get('deficiencia')
