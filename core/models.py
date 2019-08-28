@@ -17,7 +17,7 @@ class Candidato(models.Model):
     nacionalidade = models.CharField(max_length=40, null=False, blank=False, verbose_name='nacionalidade')
     cpf = models.CharField(unique=True, max_length=15, null=True, blank=False, verbose_name='cpf')
     telefone = models.CharField(max_length=15, null=False, blank=False, verbose_name='celular', default="", editable=False)
-#    data_nascimento = models.DateField(auto_now=False, null=True, verbose_name='data_nascimento')
+    data_nascimento = models.DateField(auto_now=False, null=True, verbose_name='data_nascimento')
     genero = models.CharField(max_length=15, null=True, verbose_name='genero')
     estado_civil = models.CharField(max_length=15, null=True, verbose_name='estado_civil')
     deficiencia = models.CharField(max_length=2, null=True, verbose_name='deficiencia')
@@ -32,7 +32,7 @@ class Candidato(models.Model):
     matricula = models.CharField(max_length=20, null=True, blank=False)
     curso = models.CharField(max_length=30, null=True, blank=False, verbose_name='curso')
     periodo = models.CharField(max_length=2, null=True, blank=True, verbose_name='periodo')
-
+    arquivo = models.FileField(null=True, upload_to='arquivos')
 
     def __str__(self):
         return self.nome
