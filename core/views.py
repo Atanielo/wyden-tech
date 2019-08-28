@@ -23,7 +23,7 @@ def contato_novo(request):
 
 def candidato_novo(request):
     if request.method == 'POST':
-        try:
+
             candidato = {}
             candidato['nome'] = request.POST.get('nome')
             candidato['email'] = request.POST.get('email')
@@ -49,10 +49,6 @@ def candidato_novo(request):
 #                candidato['arquivo'] = request.FILES.get('arquivo')
 
             Candidato.objects.create(**candidato)
-        except Exception as e:
-                messagem = str(e)
-        else:
-            mensagem = 'Contato realizado com sucesso'
 
     return redirect('core_home')
 
