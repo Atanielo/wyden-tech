@@ -1,0 +1,8 @@
+/ip firewall layer7-protocol
+add name=Block-Facebook regexp="^.+(facebook.com|messenger.com).*$"
+add name=Block-Instagram regexp="^.+(instagram.com).*$"
+add name=Block-Twitter regexp="^.+(twitter.com).*$"
+add name=Block-Linkedin regexp="^.+(linkedin.com).*$"
+add name=Block-Youtube regexp="^.+(youtube.com).*$"
+add name=Block-Whatsapp regexp="^.+(whatsapp.com).*$"
+add name=Block-Netflix regexp="^.+(netflix.com).*$"
