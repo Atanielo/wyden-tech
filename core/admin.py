@@ -18,7 +18,7 @@ class ContatoAdmin(admin.ModelAdmin):
 
 class CandidatoAdmin(admin.ModelAdmin):
     search_fields = ('nome', 'email', 'cpf','data_nascimento','arquivo')
-    list_display = ('nome', 'email', 'cpf','data_nascimento', 'arquivo')
+    list_display = ('nome', 'email', 'cpf','data_nascimento')
 
 
 

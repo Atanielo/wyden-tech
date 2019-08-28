@@ -45,8 +45,8 @@ def candidato_novo(request):
             candidato['matricula'] = request.POST.get('matricula')
             candidato['curso'] = request.POST.get('curso')
             candidato['periodo'] = request.POST.get('periodo')
-            if request.method == 'POST':
-                candidato['arquivo'] = request.FILES.get('arquivo')
+#            if request.method == 'POST':
+#                candidato['arquivo'] = request.FILES.get('arquivo')
 
             if candidato['cpf'] == request.POST.get('cpf'):
                 messages.info(request, 'CPF já cadastrado')
