@@ -23,7 +23,7 @@ def contato_novo(request):
 
 def candidato_novo(request):
     if request.method == 'POST':
-        try:
+
             candidato = {}
             candidato['nome'] = request.POST.get('nome')
             candidato['email'] = request.POST.get('email')
@@ -48,17 +48,10 @@ def candidato_novo(request):
 #            if request.method == 'POST':
 #                candidato['arquivo'] = request.FILES.get('arquivo')
 
-            if candidato['cpf'] == request.POST.get('cpf'):
-                messages.info(request, 'CPF já cadastrado')
 
-            Candidato.objects.create(**candidato)
-        except Exception as e:
-            mensagem = str(e)
-            pass
-        else:
-            mensagem = 'Contato realizado com sucesso'
+    Candidato.objects.create(**candidato)
 
-        return redirect('core_home')
+    return redirect('core_home')
 
 
 '''def candidato_novo(request):
