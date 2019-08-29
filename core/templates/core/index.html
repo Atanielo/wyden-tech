@@ -25,31 +25,30 @@
 </head>
 <body>
 
-    <!--MENU-->
-   <header>
-
-  <div id='nav-wrapper'>
-        <nav>
+     <!--MENU-->
+    <div id='nav-wrapper'>
+        <nav class="navbar navbar-expand-lg ">
             <img src="{% static 'img/wt.png' %}" alt="Wyden Tech Jr" width="60" height="60">
 
-            <li><a href="#categories">SERVIÇOS</a></li>
+            <i id='seperator'>|</i>
+            <li><a  href="#categories">SERVIÇOS</a></li>
             <li><a href="#sobrenos">SOBRE NÓS</a></li>
-            <li><a href="#availability">PARCEIROS</a></li>
+            <li><a href="#parceiros">PARCEIROS</a></li>
             <li><a href="#developers-pg">TIME</a></li>
-            <li><a href="#contato">CONTATO</a></li>
+            <li><a href="#foot">CONTATO</a></li>
             <li><a onclick="location.href='login'" >LOGIN</a></li>
+
         </nav>
     </div>
-  </header>
     <!--WYDEN TECH JR-->
     <div id='banner'>
         <div id='banner-vid'>
-            <video autoplay loop id="video-background" poster="{% static 'img/poster2.png' %}" width="1700" height="750" muted>
+          <video autoplay loop id="video-background" poster="{% static 'img/poster2.png' %}" width="1700" height="750" muted>
+
             </video>
         </div>
-        <h1>WYDEN TECH JR</h1>
+        <h1><strong>WYDEN TECH JR</strong></h1>
         <h2>Desenvolvimento de Software.</h2>
-        <p></p><p></p><p></p> <p></p>
 
         <!--SERVIÇOS-->
     </div>
@@ -81,8 +80,8 @@
                     <li>Cadastro de clientes, gestão de documentos ou de estoque, por exemplo</li>
                     <li>Integração e comunicação  permitindo que públicos tenham acessos a informações</li>
                 </ul>
-            </article>
-            <article class='slide'>
+            </article
+>            <article class='slide'>
                 <h2>Aplicativos desenvolvidos para ser instalado em um dispositivo eletrônico móvel</h2>
                 <ul>
                     <li>Melhor experiência para o usuário, possibilitando uma melhor utilização de recursos gráficos.</li>
@@ -101,41 +100,64 @@
 
         <!--SOBRE NÓS-->
         <div id='sobrenos'>
-                <section id='categories' href="#slideshow">
-              <section class="container-fluid" style='border: 0;'><h2>SOBRE NÓS</h2></section>
+                <section class="container" id='categories' href="#slideshow">
+
+        <div class="col-md-12 col-sm-12 col-12">
+          <h2 class="ser-title">Sobre Nós</h2>
+          <hr class="botm-line">
+        </div>
 
 
-                    <div class='t-box hover-t-box'  class='t-box'>
-                        <img src="{% static 'img/wtj.png' %}" width="260">
+                    <div class='hover-t-box'  class='t-box'>
+             <img src="{% static 'img/wtj.png' %}" width="260"><br>
+
                         <article>
-                                <p>
+                                <p class="container-fluid">
                                     A Wyden Tech Jr é uma empresa sem fins lucrativos fundada em 2019, com objetivo de proporcionar ambiente de aprendizado, empreendedorismo e colaborativismo para estudantes de Tecnologia da Informação (TI).
                                 </p>
-                                <p>
+                                <p class="container-fluid">
                                     Proporcionando um ambiente empresarial, a Wyden Tech Júnior, vinculada ao CEI (Centro de Empreendedorismo e Inovaçao) dentro da Instituiçao Facid Wyden, visa prestar serviço de qualidade como empresa junior pode oferecer. Seu crescimento além de impactar diretamente no crescimento e evolução de seus membros, gera valor ao projeto de seus clientes e estimula o cenario de empreendedorismo brasileiro.
                                 </p>
                         </article>
-                    </div>
+         </div>
             </section>
+
         </div>
         <!--PARCEIROS-->
+         <div>
+              <div>
+        <div class="col-md-12 col-sm-12 col-12">
+          <h2 class="ser-title">PARCEIROS</h2>
+          <hr class="botm-line">
+        </div>
+            </div> <br><br>
+        <section  id="parceiros">
 
-                  <section class="container-fluid" style='border: 0;'><h2>PARCEIROS</h2></section>
+
+
                   <div id='availability'>
 
                       <div class='time-part'><img src="{% static 'img/adtalen.png' %}" width="355"></div>
                       <div class='time-part'><img src="{% static 'img/cei.png' %}" width="355"></div>
                       <div class='time-part'><img src="{% static 'img/facid.png' %}" width="355"></div>
+
                   </div>
-
-
+        </section>
+             </div>
         <!--TIME-->
 
         <div id='developers-pg'>
-                <section class="container-fluid" style='border: 0;'>
-                    <h2>TIME</h2>
-                </section>
+
+
+
             <section id='developers' href="#categories">
+                 <div class="col-md-12 col-sm-12 col-12">
+                       <h2 class="ser-title">TIME</h2>
+                        <hr class="botm-line"><br>
+                   </div>
+
+
+
                 <div class='t-box hover-t-box'>
                     <img src="{% static 'img/01.png' %}" height="100" width="100">
                     <h1>Artur de Sousa</h1>
@@ -166,20 +188,24 @@
                     <h2>Desenvolvedora Back-End</h2>
                     <span><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></span>
                 </div>
+
             </section>
 
         </div>
 
 
         <section id='contato'>
+
+
+
     <main>
 
 
-      <h2>CONTATO</h2>
+
 
     <div class="topic">
         <div class="open">
-         <h2 class="question">Entre em contato<span class="ptag"></span></h2>
+         <h2 class="question">ENTRE EM CONTATO<span class="ptag"></span></h2>
          <span class="faq-t"></span>
     </div>
 
@@ -217,7 +243,7 @@
 
       <div class="topic">
             <div class="open">
-              <h2 class="question">Envie seu Currículo<span class="ptag"></span></h2>
+              <h2 class="question">ENVIE SEU CURRÍCULO<span class="ptag"></span></h2>
               <span class="faq-t"></span>
             </div>
      <form class="answer" action="{% url 'core_candidato_novo' %}" enctype="multipart/form-data" method="POST" onSubmit="return confirm('Enviado com sucesso')">
