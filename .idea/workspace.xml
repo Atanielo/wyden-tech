@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d70be0c7-1fbf-4066-be8d-8e8aceb0e0e1" name="Default Changelist" comment="te">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/core/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/181101522_12082019164121.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/181101522_12082019164121_l6Re4wG.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/Aula-2-Instalando-o-GLPI.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/Documento_sem_título_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/Fatura.PDF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/Fatura_1.PDF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/GATEWAY_2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/Manual_Transferencia_Integral_Estudante.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/ORÇAMENTO_ATANIEL.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/ORÇAMENTO_ATANIEL_K2EyCeW.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/Relatório_Wyden_Tech_Jr.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/Relatório_Wyden_Tech_Jr_eny4Zle.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/alunos9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/internalPrintPdf10.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_files/arquivos/layer_7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="d70be0c7-1fbf-4066-be8d-8e8aceb0e0e1" name="Default Changelist" comment="te" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +49,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/templates/core/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="60">
               <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
             </state>
           </provider>
@@ -227,7 +208,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="770" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28776434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -240,7 +220,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49773413" visible="true" weight="0.1952" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49773413" visible="true" weight="0.752" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022659" side_tool="true" weight="0.6688" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -418,7 +398,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/templates/core/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="60">
           <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
         </state>
       </provider>
